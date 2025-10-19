@@ -13,7 +13,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity here */
+    background-color: rgba(0, 0, 0, 0.3); 
     z-index: -1;
 }
 
@@ -24,17 +24,6 @@ body::before {
 .table-opacity {
     opacity: 0.8;
 }
-
-/* #schedule {
-  border: none !important;
-} */
-
-/* red inner borders */
-/* #schedule.table-bordered tr,
-#schedule.table-bordered th,
-#schedule.table-bordered td  {
-    border-color:  #dc3545 !important; 
-} */
 
 #schedule.table-bordered * {
   border-color: #dc3545 !important;
