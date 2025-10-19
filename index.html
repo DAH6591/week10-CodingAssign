@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week10CodingAssignment</title>
+<link rel="stylesheet" href="node_modules/bootswatch/dist/flatly/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="week10.css" />
+</head>
+
+<body class="p-4">
+<!-- Top image section -->
+<div class="mt-3 text-center">
+   <img class="mx-auto d-block border rounded border-danger border-1 pumpkins-img" src="pumpkins3.jpg">
+</div>
+
+<!-- BEGIN container holding main content -->
+<div class="container mt-5">
+
+  <!-- BEGIN form for user input -->
+  <form class="p-3 border rounded border-danger border-2 bg-primary text-white form-opacity">
+    <!-- Header -->
+     <div class="text-center fs-5">
+      <p>Please enter yesterday's NHL game information and scores below.</p>
+  </div>
+
+    <!-- Bootstrap grid used to format innput fields -->
+    <div class="row g-3"> <!-- BEGIN form row -->
+      <!-- Game Date -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <label for="input-date" class="form-label">Game Date</label>
+        <input type="text" class="form-control fw-bold" id="input-date" placeholder="Date">
+      </div>
+
+      <!-- Game Time -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <label for="input-time" class="form-label">Game Time</label>
+        <input type="text" class="form-control fw-bold" id="input-time" placeholder="Time">
+      </div>
+
+      <!-- Home Team -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <label for="input-home" class="form-label">Home Team</label>
+        <input type="text" class="form-control fw-bold" id="input-home" placeholder="Team name">
+      </div>
+
+      <!-- Away Team -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <label for="input-away" class="form-label">Away Team</label>
+        <input type="text" class="form-control fw-bold" id="input-away" placeholder="Team name">
+      </div>
+
+      <!-- Networks -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <label for="input-networks" class="form-label">Network</label>
+        <input type="text" class="form-control fw-bold" id="input-networks" placeholder="Network">
+      </div>
+
+      <!-- Score -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <label for="input-score" class="form-label">Score</label>
+        <input type="text" class="form-control fw-bold" id="input-score" placeholder="Home-Away">
+      </div>
+
+      <!-- Button to submit user input for a game and is dynamically inputed to the display table -->
+      <div class="col-12 mt-3 text-center">
+        <button id="input" type="button" class="btn btn-dark fw-bold button-customBlue">
+          Create New Game
+        </button>
+      </div>
+    </div><!-- END row -->
+  </form><!-- END form for user input-->
+
+  <!-- BEGIN table that displays submitted game info -->
+    <div class="mt-5 border rounded border-danger border-2 overflow-hidden">    
+      <table id="schedule" class="table table-bordered mb-0 table-opacity">
+      <!-- Table caption-->
+        <caption class="caption-top text-center text-white fw-bold bg-primary mb-0 fs-6">
+          Yesterday's NHL Scores:
+        </caption>
+      <!-- Table header -->
+        <thead class="table-primary">
+          <tr>
+            <th>Game Date</th>
+            <th>Time</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Where to Watch</th>
+            <th>Score</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+      <!-- Table body will to be created dynamically using JavaScript -->
+        </table>
+  </div> <!-- END of table section -->
+          
+</div> <!-- End of main container -->
+
+<!-- Bottom image -->  
+  <div class="mt-5 text-center">
+    <img class="mx-auto d-block border rounded border-danger border-3 hockey-img" height="300px" width="200px" src="Doreen_hockey.jpg">
+      <!-- Caption text -->
+        <h5 class="text-center custom-header">yours truly...</h5>
+  <!-- </div> END bottom image -->
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="week10.js"></script>    
+
+</body>
+</html>
