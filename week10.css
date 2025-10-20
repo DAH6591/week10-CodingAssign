@@ -31,6 +31,7 @@ body::before {
 
 .button-customBlue {
     background-color: blue;
+    opacity: 0.8;
 }
 
 .hockey-img {
@@ -42,8 +43,11 @@ body::before {
 }
 
 .custom-header {
+    display:inline-block;
     font-family:cursive;
-    color: lightgoldenrodyellow;
+    color: cornsilk;
     font-style: italic;
+    background-color: blue;
+    opacity: 0.7;
 }
 
