@@ -27,7 +27,7 @@ document.getElementById('input').addEventListener('click', () => {
    //Appending a Delete button with current id, button created by createDeleteButton function 
     actions.appendChild(createDeleteButton(id++));
 
-    //input fileds cleared after new row is added to table
+    //input fields cleared after new row is added to table
     document.getElementById('input-date').value = '';
     document.getElementById('input-time').value = '';
     document.getElementById('input-home').value = '';
